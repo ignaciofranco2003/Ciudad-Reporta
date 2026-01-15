@@ -83,3 +83,17 @@ mysql -u <usuario> -p ciudad_reporta < inserts_ciudad_reporta.sql
 
 ## Panel de administración
 El panel de admin permite autenticación de administradores y la gestión de reportes/categorías desde el backend. Está pensado para revisar reportes y operar acciones administrativas sobre la información de las categorias almacenadas en la base de datos MYSQL.
+
+## 🧱 Arquitectura del sistema
+
+![Arquitectura](docs/img/arquitectura.png)
+
+El sistema está compuesto por tres capas principales:
+
+- 📱 Aplicación Android (Java)
+- 🐍 Backend API REST (Flask)
+- 🖥️ Panel Web (HTML/CSS/JS)
+- 🗄️ Base de datos MySQL
+
+La aplicación móvil y el panel web se comunican con el backend mediante una API REST utilizando JSON.
+El backend se encarga de la lógica de negocio, almacenamiento de imágenes y acceso a la base de datos.
