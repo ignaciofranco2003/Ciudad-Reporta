@@ -83,24 +83,39 @@ Ciudad Reporta propone:
 
 ## Capturas del sistema
 
+### App móvil
 
-### 📱 App móvil
-- Login
-   - ![Login](docs/img/login.png)
-- Menu Principal
-   - ![Menú](docs/img/menu.png)
-- Crear Reporte
-   - ![Crear reporte](docs/img/crear_reporte.png)
-- Mapa de reportes solucionados
-   - ![Mapa](docs/img/mapa.png)
+**Login**
 
-### 🖥️ Panel web Admin
-- Admin Login
-   - ![Admin login](docs/img/admin_login.png)
-- Admin Reportes
-   - ![Gestión de reportes](docs/img/admin_reportes.png)
-- Gestion de categorias
-   - ![Gestión de categorías](docs/img/admin_categorias.png)
+![Login](docs/img/login.png)
+
+**Menú principal**
+
+![Menú](docs/img/menu.png)
+
+**Crear reporte**
+
+![Crear reporte](docs/img/crear_reporte.png)
+
+**Mapa de reportes solucionados**
+
+![Mapa](docs/img/mapa.png)
+
+---
+
+### Panel web Admin
+
+**Admin Login**
+
+![Admin login](docs/img/admin_login.png)
+
+**Gestión de reportes**
+
+![Gestión de reportes](docs/img/admin_reportes.png)
+
+**Gestión de categorías**
+
+![Gestión de categorías](docs/img/admin_categorias.png)
 
 ---
 
