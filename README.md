@@ -88,7 +88,6 @@ Ciudad Reporta propone:
 ![Login](docs/img/login.png)
 ![Menú](docs/img/menu.png)
 ![Crear reporte](docs/img/crear_reporte.png)
-![Mis reportes](docs/img/mis_reportes.png)
 ![Mapa](docs/img/mapa.png)
 
 ### 🖥️ Panel web Admin
