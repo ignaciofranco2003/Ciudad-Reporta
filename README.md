@@ -142,7 +142,7 @@ Abrir la carpeta /Frontend en Android Studio.
 
 El backend puede configurarse para enviar notificaciones por email usando SMTP.
 
-## 🧱 Arquitectura del sistema
+## Arquitectura del sistema
 
 ![Arquitectura](docs/img/arquitectura.png)
 
