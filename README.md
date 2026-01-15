@@ -85,14 +85,21 @@ Ciudad Reporta propone:
 
 
 ### 📱 App móvil
+- Login
 ![Login](docs/img/login.png)
+- Menu Principal
 ![Menú](docs/img/menu.png)
+- Crear Reporte
 ![Crear reporte](docs/img/crear_reporte.png)
+- Mapa de reportes solucionados
 ![Mapa](docs/img/mapa.png)
 
 ### 🖥️ Panel web Admin
+- Admin Login
 ![Admin login](docs/img/admin_login.png)
+- Admin Reportes
 ![Gestión de reportes](docs/img/admin_reportes.png)
+- Gestion de categorias
 ![Gestión de categorías](docs/img/admin_categorias.png)
 
 ---
