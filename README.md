@@ -129,7 +129,7 @@ Ciudad Reporta propone:
 
 ## Instalación y configuración
 
-### 🗄️ Base de datos (MySQL)
+### Base de datos (MySQL)
 1. Crear una base de datos en MySQL.
 2. Ejecutar los scripts que se encuentran en /SQL
 
