@@ -156,7 +156,3 @@ El sistema está compuesto por tres capas principales:
 La aplicación móvil y el panel web se comunican con el backend mediante una API REST utilizando JSON.
 El backend se encarga de la lógica de negocio, almacenamiento de imágenes y acceso a la base de datos.
 
-Autor
-Ignacio Franco
-Estudiante de Lic. en Informática
-::contentReference[oaicite:0]{index=0}
