@@ -99,10 +99,10 @@ Ciudad Reporta propone:
 ---
 
 ## Estructura del repositorio
-/Backend -> API REST en Flask (Python)
-/Frontend -> App Android
-/SQL -> Scripts de base de datos
-/docs -> Documentación e imágenes
+- /Backend -> API REST en Flask (Python)
+- /Frontend -> App Android
+- /SQL -> Scripts de base de datos
+- /docs -> Documentación e imágenes
 
 ---
 
@@ -128,15 +128,15 @@ python Ciudad_Reporta.py
 ```
 Backend disponible en:
 
-   http://localhost:5000 (mismo equipo)
-   http://<IP_DEL_ROUTER>:5000 (para usar desde celular en la red local)
+   - http://localhost:5000 (mismo equipo)
+   - http://<IP_DEL_ROUTER>:5000 (para usar desde celular en la red local)
 
 ### App Android
 
 Abrir la carpeta /Frontend en Android Studio.
 
-   Configurar la IP del backend en la app.
-   Ejecutar en un dispositivo físico o emulador.
+   - Configurar la IP del backend en la app.
+   - Ejecutar en un dispositivo físico o emulador.
 
 ### Envío de emails
 
@@ -148,10 +148,10 @@ El backend puede configurarse para enviar notificaciones por email usando SMTP.
 
 El sistema está compuesto por tres capas principales:
 
-- 📱 Aplicación Android (Java)
-- 🐍 Backend API REST (Flask)
-- 🖥️ Panel Web (HTML/CSS/JS)
-- 🗄️ Base de datos MySQL
+- Aplicación Android (Java)
+- Backend API REST (Flask)
+- Panel Web (HTML/CSS/JS)
+- Base de datos MySQL
 
 La aplicación móvil y el panel web se comunican con el backend mediante una API REST utilizando JSON.
 El backend se encarga de la lógica de negocio, almacenamiento de imágenes y acceso a la base de datos.
