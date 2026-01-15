@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- HEADER -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#3499B5"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp">
+
+        <!-- Botón volver -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_previous"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="Volver"
+            app:tint="#FFFFFF" />
+
+        <!-- Logo centrado -->
+        <ImageView
+            android:id="@+id/logoHeader"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_header"
+            android:layout_centerInParent="true"
+            android:contentDescription="Logo de la aplicación" />
+    </RelativeLayout>
+
+    <!-- Mapa debajo del header -->
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Botón de guardar flotante -->
+    <Button
+        android:id="@+id/btnConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="89dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="#5CA05F"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="Guardar"
+        android:textColor="@android:color/white"
+        android:textSize="26sp" />
+</RelativeLayout>

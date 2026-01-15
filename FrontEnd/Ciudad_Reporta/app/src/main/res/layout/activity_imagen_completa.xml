@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Imagen en pantalla completa -->
+    <ImageView
+        android:id="@+id/imgCompleta"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:contentDescription="Imagen del reporte" />
+
+    <!-- Botón para cerrar -->
+    <ImageButton
+        android:id="@+id/btnCerrar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_btn_circular_blanco"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:contentDescription="Cerrar"
+        app:tint="#000000" />
+</FrameLayout>

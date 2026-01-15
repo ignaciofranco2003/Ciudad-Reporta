@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1096629929118",
+    "project_id": "ciudad-reporta",
+    "storage_bucket": "ciudad-reporta.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096629929118:android:d97908e1a69974d817278f",
+        "android_client_info": {
+          "package_name": "com.example.ciudad_reporta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096629929118-6j3128kq60ktvlp1ovhtaorcofvd7as2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ciudad_reporta",
+            "certificate_hash": "19a71a1134484fef40131a91e79c75ca7501b9d4"
+          }
+        },
+        {
+          "client_id": "1096629929118-dgr0hf5rfrjeka89psrvq60vcnrm73f4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ciudad_reporta",
+            "certificate_hash": "97ae9f845ff890130f6412cfe8383acdf556dddf"
+          }
+        },
+        {
+          "client_id": "1096629929118-ojv9457u39g0di0as1bq1bcpc71chppn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW68PRzGvEXBOw5wVlLEbLuMtO9xESFSc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096629929118-ojv9457u39g0di0as1bq1bcpc71chppn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

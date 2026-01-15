@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="SelectedPhotoAccess">
+
+    <!-- Se puede usar la cámara, pero no es obligatoria para la app -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <!-- Permisos necesarios para funcionamiento de la app -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_ciudad_reporta_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_ciudad_reporta_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ciudad_Reporta"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Utilidades.ImagenCompletaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu_principal.mis_reportes.MapaMisReportes"
+            android:exported="false" />
+        <activity
+            android:name=".menu_principal.reportes_cercanos.ReportesCercanosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu_principal.mis_reportes.EditarReporteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu_principal.mis_reportes.MisReportesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu_principal.crear_reporte.SeleccionMapaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu_principal.crear_reporte.CrearReporteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu_principal.acerca_app.AcercaDeLaAppActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu_principal.MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".login.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- FileProvider necesario para compartir archivos entre apps (ej: imagen capturada) -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- Config para autenticación con Google -->
+        <meta-data
+            android:name="com.google.android.gms.client_id"
+            android:value="@string/default_web_client_id" />
+
+        <!-- Config de osmdroid (mapas) -->
+        <meta-data
+            android:name="org.osmdroid.config"
+            android:resource="@xml/osmdroid_config" />
+
+        <!-- Biblioteca osmdroid como opcional -->
+        <uses-library
+            android:name="org.osmdroid"
+            android:required="false" />
+    </application>
+
+</manifest>

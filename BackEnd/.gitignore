@@ -1,0 +1,4 @@
+# Ignorar carpeta de entorno virtual
+.venv/
+static/imagenes/
+.env

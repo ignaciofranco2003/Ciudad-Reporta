@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Ciudad Reporta</string>
+
+    <string name="texto_acerca_app"><![CDATA[
+    <b>Ciudad Reporta</b> es una aplicación creada con el objetivo de facilitar la participación ciudadana en el cuidado de los espacios públicos.<br><br>
+    A través de esta herramienta, <b>cualquier vecino puede</b> reportar fácilmente problemas en su barrio, como basurales, luminarias rotas, calles dañadas o situaciones que afecten la calidad de vida en el entorno urbano.<br><br>
+    <b>La aplicación permite:</b><br>
+    • Registrar un problema con foto, ubicación y descripción.<br>
+    • Hacer seguimiento del estado de cada reporte.<br><br>
+    <b>Buscamos</b> promover una comunidad más activa, comprometida y conectada con su ciudad.
+    ]]></string>
+
+    <string name="texto_footer">Esta app fue desarrollada sin fines de lucro como proyecto educativo/social.\nGracias por ser parte del cambio.</string>
+
+    <string name="info_mapa_reportes"> En este mapa vas a poder visualizar los reportes de la comunidad que ya fueron solucionados.</string>
+
+    <string name="default_web_client_id">1:1096629929118:android:d97908e1a69974d817278f.apps.googleusercontent.com</string>
+
+</resources>

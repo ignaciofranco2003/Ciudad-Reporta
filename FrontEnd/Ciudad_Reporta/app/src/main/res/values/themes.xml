@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Ciudad_Reporta" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Color de la barra de estado -->
+        <item name="android:statusBarColor">@color/status_bar_color</item>
+    </style>
+
+    <style name="Theme.Ciudad_Reporta" parent="Base.Theme.Ciudad_Reporta" />
+</resources>

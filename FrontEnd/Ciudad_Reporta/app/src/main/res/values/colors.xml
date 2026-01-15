@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="status_bar_color">#3499B5</color>
+
+    <color name="boton_1">#8ABE87</color>
+    <color name="boton_2">#72B9C7</color>
+    <color name="boton_3">#F6CC83</color>
+    <color name="boton_4">#F09B6C</color>
+    <color name="blanco">#FFFFFF</color>
+</resources>

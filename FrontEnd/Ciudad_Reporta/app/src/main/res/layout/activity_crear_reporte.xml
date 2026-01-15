@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2">
+
+    <!-- HEADER -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#3499B5"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:windowFullscreen="true">
+
+        <!-- Botón volver -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_previous"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="Volver" />
+
+        <!-- Logo centrado -->
+        <ImageView
+            android:id="@+id/logoHeader"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_header"
+            android:layout_centerInParent="true"
+            android:contentDescription="Logo de la aplicación" />
+    </RelativeLayout>
+
+    <!-- Contenido principal con Scroll -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Tipo de problema -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Crear Reporte"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView android:text="Tipo de problema: *"
+                android:id="@+id/tvTipoProblema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+            <Spinner android:id="@+id/spinnerCategoria"
+                android:layout_marginTop="20px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#212121" />
+
+            <!-- Descripción -->
+            <TextView
+                android:text="Descripción: *"
+                android:id="@+id/tvDescripcion"
+                android:layout_marginTop="16dp"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/etDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="100dp"
+                android:minHeight="40dp"
+                android:hint="Describa el problema"
+                android:textColor="#212121"
+                android:textColorHint="#888888"
+                android:textSize="14sp" />
+
+
+            <!-- Ubicación -->
+            <TextView android:text="Ubicación: *"
+                android:id="@+id/tvUbicacion"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+            <Spinner android:id="@+id/spinnerUbicacion"
+                android:layout_marginTop="20px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#212121"/>
+            <Button
+                android:id="@+id/btnSeleccionarUbicacion"
+                android:layout_marginTop="20px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seleccionar ubicación en el mapa"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/textViewUbicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Direccion seleccionada:: -"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"/>
+            <!--
+                        <TextView
+                            android:id="@+id/textViewLongitud"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Longitud: -"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#000000"/>
+            -->
+            <!-- Imagen -->
+            <TextView android:text="Evidencia del problema (Imagen): *" android:layout_marginTop="16dp"
+                android:id="@+id/tvEvidencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+            <Button android:id="@+id/btnSeleccionarImagen"
+                android:layout_marginTop="15px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subir imagen o tomar foto"
+                android:textColor="#000000"/>
+            <ImageView android:id="@+id/imgPreview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:textColor="#000000"/>
+
+            <!-- Botón enviar -->
+            <Button android:id="@+id/btnEnviar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar Reporte"
+                android:layout_marginTop="24dp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

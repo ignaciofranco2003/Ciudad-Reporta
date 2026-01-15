@@ -1,0 +1,111 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- HEADER -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#3499B5"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_media_previous"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="Volver"
+                app:tint="#FFFFFF" />
+
+            <ImageView
+                android:id="@+id/logoHeader"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_header"
+                android:layout_centerInParent="true"
+                android:contentDescription="Logo de la aplicación" />
+        </RelativeLayout>
+
+        <!-- Selector de categorías -->
+        <RadioGroup
+            android:id="@+id/radioGrupoCategorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/rbActivos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Activos"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/rbPendientes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pendientes"
+                android:textColor="#000000"
+                android:layout_marginStart="15dp" />
+
+            <RadioButton
+                android:id="@+id/rbSolucionados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Solucionados"
+                android:textColor="#000000"
+                android:layout_marginStart="15dp" />
+        </RadioGroup>
+
+        <!-- Texto para mostrar mensaje cuando no hay reportes -->
+        <TextView
+            android:id="@+id/txtMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:visibility="gone" />
+
+        <!-- Lista de reportes -->
+        <ListView
+            android:id="@+id/listaReportes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnVerMapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver en mapa"
+        android:textColor="@android:color/white"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        app:backgroundTint="#3499B5"
+        app:icon="@android:drawable/ic_menu_mapmode"
+        app:iconTint="@android:color/white"
+        app:iconPadding="8dp"
+        app:cornerRadius="50dp"
+        app:iconGravity="textStart" />
+
+</FrameLayout>
