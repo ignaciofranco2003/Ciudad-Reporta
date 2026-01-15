@@ -80,3 +80,6 @@ mysql -u <usuario> -p ciudad_reporta < inserts_ciudad_reporta.sql
 - **Base de datos MySQL**: almacena usuarios, reportes y categorías.
 - **Servidor SMTP**: envío de emails desde el backend (opcional).
 - **Android (app cliente)**: consume la API y permite reportar incidencias desde el móvil.
+
+## Panel de administración
+El panel de admin permite autenticación de administradores y la gestión de reportes/categorías desde el backend. Está pensado para revisar reportes y operar acciones administrativas sobre la información de las categorias almacenadas en la base de datos MYSQL.
